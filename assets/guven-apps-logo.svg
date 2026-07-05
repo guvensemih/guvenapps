@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="760"
+     height="200"
+     viewBox="0 0 760 200"
+     role="img"
+     aria-labelledby="logoTitle logoDescription">
+
+  <title id="logoTitle">Güven Apps logosu</title>
+
+  <desc id="logoDescription">
+    Koyu lacivert ve teal renklerde, yuvarlatılmış bir kalkan ve konuşma balonunu
+    çağrıştıran stilize G simgesi. Simgenin içinde Braille hücresini temsil eden
+    altı nokta bulunur. Sağında Güven Apps, altında Erişilebilir Android
+    uygulamaları yazısı yer alır.
+  </desc>
+
+  <g transform="translate(10 4)">
+    <path
+      d="M42 28
+         Q42 16 54 16
+         H150
+         Q162 16 162 28
+         V116
+         Q162 143 137 153
+         L103 184
+         L80 158
+         H54
+         Q42 158 42 146
+         Z"
+      fill="none"
+      stroke="#0D1B3D"
+      stroke-width="12"
+      stroke-linejoin="round"
+      stroke-linecap="round" />
+
+    <circle cx="67" cy="55" r="6" fill="#009C9A" />
+    <circle cx="67" cy="78" r="6" fill="#009C9A" />
+    <circle cx="67" cy="101" r="6" fill="#009C9A" />
+
+    <circle cx="88" cy="55" r="6" fill="#009C9A" />
+    <circle cx="88" cy="78" r="6" fill="#009C9A" />
+    <circle cx="88" cy="101" r="6" fill="#009C9A" />
+
+    <text
+      x="91"
+      y="136"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="88"
+      font-weight="700"
+      fill="#0D1B3D">G</text>
+
+    <path
+      d="M113 139 Q135 135 148 118"
+      fill="none"
+      stroke="#009C9A"
+      stroke-width="10"
+      stroke-linecap="round" />
+  </g>
+
+  <text
+    x="205"
+    y="102"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="68"
+    font-weight="700"
+    fill="#0D1B3D">Güven</text>
+
+  <text
+    x="417"
+    y="102"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="68"
+    font-weight="700"
+    fill="#009C9A">Apps</text>
+
+  <text
+    x="210"
+    y="142"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    fill="#0D1B3D">Erişilebilir Android uygulamaları</text>
+</svg>

@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Güven Apps</title>
   <style>
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 1000;
+      padding: 12px 16px;
+      background: #0D1B3D;
+      color: #fff;
+      border-radius: 8px;
+    }
+    .skip-link:focus {
+      top: 16px;
+    }
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #FFC845;
+      outline-offset: 4px;
+    }
     body {
       font-family: Arial, sans-serif;
       max-width: 900px;
@@ -18,6 +36,46 @@
       border-bottom: 1px solid #ddd;
       margin-bottom: 32px;
       padding-bottom: 20px;
+    }
+    .brand-intro {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      align-items: center;
+      gap: 32px;
+    }
+    .brand-icon {
+      display: block;
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      justify-self: center;
+    }
+    .brand-copy h1 {
+      margin-top: 0;
+    }
+    .tagline {
+      margin: 0 0 8px;
+      color: #075b59;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .logo-description {
+      max-width: 760px;
+      margin: 16px 0 0;
+    }
+    .logo-description summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #0D1B3D;
+    }
+    @media (max-width: 700px) {
+      .brand-intro {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .brand-icon {
+        max-width: 150px;
+      }
     }
     h1 {
       font-size: 2rem;
@@ -42,6 +100,28 @@
       margin: 16px 0;
       background: #fafafa;
     }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+    .card-grid .card {
+      margin: 0;
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      background: #e6f5f4;
+      color: #075b59;
+    }
+    @media (max-width: 700px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
     footer {
       margin-top: 40px;
       border-top: 1px solid #ddd;
@@ -51,17 +131,34 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#ana-icerik">Ana içeriğe geç</a>
   <header>
-    <h1>Güven Apps</h1>
-    <p>Güven Apps, erişilebilir ve kullanımı kolay Android uygulamaları geliştiren bağımsız bir uygulama markasıdır.</p>
+    <div class="brand-intro">
+      <img
+        class="brand-icon"
+        src="assets/guven-apps-icon.svg"
+        alt="Güven Apps simgesi">
+
+      <div class="brand-copy">
+        <h1>Güven Apps</h1>
+        <p class="tagline">Erişilebilir Android uygulamaları</p>
+        <p>Güven Apps, erişilebilir ve kullanımı kolay Android uygulamaları geliştiren bağımsız bir uygulama markasıdır.</p>
+
+        <details class="logo-description">
+          <summary>Logo betimlemesi</summary>
+          <p>Güven Apps logosu, koyu lacivert ve teal renklerde, yuvarlatılmış bir kalkan ve konuşma balonunu çağrıştıran stilize bir G simgesinden oluşur. Simgenin içindeki altı nokta Braille hücresini ve erişilebilirliği temsil eder.</p>
+        </details>
+      </div>
+    </div>
     <nav>
       <a href="about.html">Hakkımızda</a>
       <a href="guven-phone/">Güven Phone</a>
       <a href="guven-keyboard/">Güven Braille Klavye</a>
+      <a href="#destek">İletişim</a>
     </nav>
   </header>
 
-  <main>
+  <main id="ana-icerik">
     <section>
       <h2>Uygulamalar</h2>
 
@@ -83,8 +180,43 @@
     </section>
 
     <section>
-      <h2>Destek</h2>
-      <p>Uygulamalarla ilgili destek almak için bizimle e-posta yoluyla iletişime geçebilirsiniz.</p>
+      <h2>Neden Güven Apps?</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Erişilebilirlik önceliği</h3>
+          <p>Uygulamalar, ekran okuyucu kullanan görme engelli kullanıcıların ihtiyaçları temel alınarak geliştirilmektedir.</p>
+        </div>
+
+        <div class="card">
+          <h3>Gerçek kullanım deneyimi</h3>
+          <p>Kararlar gerçek cihaz testleri, kullanıcı geri bildirimleri ve günlük kullanım sırasında karşılaşılan sorunlar doğrultusunda alınmaktadır.</p>
+        </div>
+
+        <div class="card">
+          <h3>Sade ve doğrudan kullanım</h3>
+          <p>Temel işlemlerin karmaşık menüler arasında kaybolmadan, anlaşılır ve güvenilir biçimde yapılması amaçlanmaktadır.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Son gelişmeler</h2>
+
+      <div class="card">
+        <p class="status">Güncelleme hazırlanıyor</p>
+        <h3>Güven Phone</h3>
+        <p>Yeni özellikler, erişilebilirlik iyileştirmeleri ve hata düzeltmeleri içeren kapsamlı bir güncelleme üzerinde çalışılmaktadır.</p>
+      </div>
+
+      <div class="card">
+        <p class="status">Geliştirme ve test aşamasında</p>
+        <h3>Güven Braille Klavye</h3>
+        <p>Braille ile yazma deneyimi, ekran okuyucu uyumu ve güvenilir metin girişi üzerinde geliştirme ve test çalışmaları sürmektedir.</p>
+      </div>
+    </section>
+    <section>
+      <h2 id="destek">Geri bildirim ve destek</h2>
+      <p>Karşılaştığınız sorunları, erişilebilirlik önerilerinizi ve yeni özellik taleplerinizi e-posta yoluyla paylaşabilirsiniz.</p>
       <p>
         <a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a>
       </p>

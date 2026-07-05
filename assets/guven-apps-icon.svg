@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="220"
+     height="220"
+     viewBox="0 0 220 220"
+     role="img"
+     aria-labelledby="iconTitle iconDescription">
+
+  <title id="iconTitle">Güven Apps simgesi</title>
+
+  <desc id="iconDescription">
+    Koyu lacivert ve teal renklerde, yuvarlatılmış bir kalkan ve konuşma
+    balonunu çağrıştıran stilize G simgesi. Sol bölümde Braille hücresini
+    temsil eden altı teal nokta bulunur.
+  </desc>
+
+  <path
+    d="M38 28
+       Q38 16 50 16
+       H170
+       Q182 16 182 28
+       V132
+       Q182 160 154 172
+       L112 208
+       L83 178
+       H50
+       Q38 178 38 166
+       Z"
+    fill="none"
+    stroke="#0D1B3D"
+    stroke-width="12"
+    stroke-linejoin="round"
+    stroke-linecap="round" />
+
+  <circle cx="68" cy="62" r="7" fill="#009C9A" />
+  <circle cx="68" cy="88" r="7" fill="#009C9A" />
+  <circle cx="68" cy="114" r="7" fill="#009C9A" />
+
+  <circle cx="93" cy="62" r="7" fill="#009C9A" />
+  <circle cx="93" cy="88" r="7" fill="#009C9A" />
+  <circle cx="93" cy="114" r="7" fill="#009C9A" />
+
+  <text
+    x="95"
+    y="151"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="96"
+    font-weight="700"
+    fill="#0D1B3D">G</text>
+
+  <path
+    d="M122 154 Q150 149 166 128"
+    fill="none"
+    stroke="#009C9A"
+    stroke-width="11"
+    stroke-linecap="round" />
+</svg>
