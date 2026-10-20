@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Güven apps tarafından geliştirilen Güven Ses Android uygulamasının gizlilik politikası.">
+  <title>Güven Ses — Gizlilik Politikası</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font: 1rem/1.7 system-ui, sans-serif; color: #1b283b; background: #f5f7fa; }
+    main { max-width: 48rem; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 1rem; }
+    h1 { font-size: 2rem; line-height: 1.25; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; line-height: 1.4; }
+    p { margin: 1rem 0; }
+    a { color: #204faa; text-underline-offset: .15em; overflow-wrap: anywhere; }
+    .updated { color: #536174; }
+    @media (max-width: 40rem) {
+      main { margin: 0; padding: 1.25rem; border-radius: 0; }
+      h1 { font-size: 1.65rem; }
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5eaf2; background: #111722; }
+      main { background: #1a2230; }
+      a { color: #a9c9ff; }
+      .updated { color: #b8c2d0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Güven Ses — Gizlilik Politikası</h1>
+  <p class="updated">Son güncelleme: <time datetime="2026-10-20">20 Ekim 2026</time></p>
+  <p>Uygulama: Güven Ses<br>
+    Paket adı: <code>com.ema.sentezleyici</code><br>
+    Geliştirici: Güven apps<br>
+    İletişim: <a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a></p>
+
+  <h2>1. Metinlerin ve sesin işlenmesi</h2>
+  <p>Güven Ses, yazdığınız, yapıştırdığınız veya başka bir uygulamanın Android metinden konuşma (TTS) arayüzü üzerinden gönderdiği metni seslendirmek için işler. Ses üretimi cihazınızda gerçekleşir. Ses modeli uygulamanın içindedir; seslendirme için metinler veya üretilen sesler Güven apps'e ya da bir bulut ses hizmetine gönderilmez.</p>
+  <p>Güven Ses hesap oluşturmanızı istemez. Uygulamada reklam, reklam kimliği takibi, kullanım analitiği veya ağ üzerinden hata raporlama hizmeti bulunmaz. Uygulama internet, mikrofon, konum ve rehber erişim izni istemez. Kullanılan yerel ses işleme bileşenlerinin telemetri gönderimi kapalıdır.</p>
+  <p>Metinler ayrı bir okuma geçmişine eklenmez. Ekrandaki metin ve hız ayarı, ekranın yeniden oluşturulabilmesi için Android'in yerel durum saklama mekanizmasıyla tutulabilir.</p>
+
+  <h2>2. Geçici ses dosyaları ve silme</h2>
+  <p>Uygulama içindeki seslendirmeler, son sesi WAV olarak kaydedebilmeniz için uygulamaya özel önbellekte geçici dosyalar oluşturur. Tamamlanan son kayıt, dışa aktarmak isterseniz kullanılmak üzere tutulur.</p>
+  <p>Yeni bir seslendirme başarıyla tamamlandığında önceki tamamlanmış geçici kayıt silinmeye çalışılır. Dışa aktarma için seçilmiş bir kayıt bu sırada korunabilir. Durdurulan veya hata veren etkin kaydın dosyası da temizlenmeye çalışılır. Uygulamayı kapatmak, tamamlanmış veya beklenmedik kapanıştan kalmış bütün geçici dosyaların hemen silineceği anlamına gelmez.</p>
+  <p>Android depolama gerektiğinde önbellek dosyalarını kaldırabilir. Siz de Android'in uygulama ayarlarından Güven Ses'in önbelleğini temizleyebilirsiniz. Uygulama verilerini temizlemek veya uygulamayı kaldırmak, uygulamaya özel yerel verileri kaldırır. Daha önce başka bir konuma dışa aktardığınız dosyalar bu işlemlerle silinmez.</p>
+
+  <h2>3. İsteğe bağlı WAV dışa aktarma</h2>
+  <p>Son sesi WAV kaydet seçeneği, Android'in dosya seçicisini açar. Ses dosyası yalnız seçtiğiniz konuma yazılır. Seçilen konum bir bulut depolama sağlayıcısına aitse dosya, o sağlayıcının hizmeti üzerinden cihaz dışına aktarılabilir ve kendi gizlilik koşullarına göre işlenir.</p>
+  <p>Dışa aktardığınız dosyanın saklanmasını, paylaşımını ve silinmesini seçtiğiniz dosya uygulaması veya hizmet üzerinden yönetirsiniz. Güven Ses bu dosyaları sonradan kendiliğinden silmez.</p>
+
+  <h2>4. Diğer uygulamalar ve Google Play</h2>
+  <p>Güven Ses'i sistem TTS motoru olarak kullanan uygulamalar, gönderdikleri metni ve aldıkları sesi kendi işlevleri ve gizlilik koşulları kapsamında işleyebilir. Güven Ses'in çevrimdışı çalışması, bu diğer uygulamaların da çevrimdışı çalıştığı anlamına gelmez.</p>
+  <p>Uygulamanın edinilmesi ve mağazadaki ödeme işlemleri Google Play tarafından yürütülür. Güven Ses uygulaması ödeme kartı bilgilerinize erişmez. Google Play'in kendi veri işleme ve gizlilik koşulları geçerlidir.</p>
+
+  <h2>5. Destek yazışmaları</h2>
+  <p><a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a> adresine kendi isteğinizle e-posta gönderirseniz e-posta adresiniz, mesajınız ve eklemeyi seçtiğiniz dosyalar bize ulaşır. Bu bilgiler talebinizi yanıtlamak ve takip etmek için kullanılır; reklam amacıyla kullanılmaz veya satılmaz. E-posta gönderimi ve saklanmasında e-posta hizmet sağlayıcıları da rol alır.</p>
+  <p>Destek yazışmaları, talebin ele alınması ve takibi için gerekli süre boyunca saklanır. Yazışmalarınızın silinmesini aynı e-posta adresinden isteyebilirsiniz. Destek için seslendirdiğiniz özel metinleri veya ses dosyalarını göndermeniz zorunlu değildir.</p>
+
+  <h2>6. Bu politikanın web sürümü</h2>
+  <p>Bu politikanın web sayfasını açtığınızda, tarayıcınız ve sayfayı barındıran hizmet bağlantının kurulması için gerekli teknik verileri kendi koşullarına göre işleyebilir. Politika sayfasına reklam, izleme kodu veya analitik aracı eklenmemiştir.</p>
+
+  <h2>7. Değişiklikler ve iletişim</h2>
+  <p>Uygulamanın veri işleme biçimi değişirse bu politika güncellenir ve son güncelleme tarihi değiştirilir. Gizlilik ve yerel verilerin silinmesi hakkındaki sorularınız için Güven apps'e <a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a> üzerinden ulaşabilirsiniz.</p>
+</main>
+</body>
+</html>
