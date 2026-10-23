@@ -41,7 +41,7 @@
   <header>
     <p><a href="./">Güven Braille Klavye sayfasına dön</a></p>
     <h1>Güven Braille Klavye - Gizlilik Politikası</h1>
-    <p>Son güncelleme: 2026</p>
+    <p>Son güncelleme: 23 Ekim 2026</p>
   </header>
 
   <main>
@@ -49,8 +49,11 @@
     <p>Güven Braille Klavye, Android cihazlarda Braille ile yazmayı sağlayan bir klavye uygulamasıdır. Uygulama Braille girişini metne çevirir, sesli geri bildirim verir ve TalkBack açıkken erişilebilir Braille yazma deneyimi sunmayı amaçlar.</p>
 
     <h2>2. Hangi izinleri ister?</h2>
-    <p>Uygulama, temel sürümünde Android'in klasik tehlikeli izinlerini istemez. Örneğin konum, rehber, kamera, mikrofon, SMS ve dosya yönetimi izinleri temel sürümde istenmez.</p>
+    <p>Uygulama yalnız telefon iznini ister. Konum, rehber, kamera, mikrofon, SMS ve dosya yönetimi gibi öteki tehlikeli Android izinlerini istemez.</p>
     <p>Uygulamanın temel sürümünde internet izni de istenmez.</p>
+
+    <h3>Telefon izni</h3>
+    <p>Telefon çaldığında yazdıklarınızın kaybolmaması için istenir. Telefon çalınca Güven yazdığınızı hemen alana bırakır ve klavyeyi kapatır. Güven bu izinle arama yapmaz; arayanın numarasını ve arama kayıtlarını görmez.</p>
 
     <h3>Klavye etkinleştirme</h3>
     <p>Bu, Android'de bir giriş yöntemi uygulamasının yazabilmesi için gereklidir. Braille klavye, metni editörlere ancak bu şekilde yazabilir.</p>
@@ -61,10 +64,11 @@
     <p>Bu hizmet, genel cihaz kontrolü yapmak, gizli otomasyon çalıştırmak veya kullanıcının haberi olmadan başka işlemler yapmak için tasarlanmamıştır.</p>
 
     <h2>3. Uygulama ilk açılışta ne ister?</h2>
-    <p>İlk kurulum ekranında uygulama kullanıcıya açıkça uygulamanın çevrimdışı çalıştığını, yazı içeriğinin temel akışta cihaz dışına gönderilmediğini, tehlikeli Android izinleri istemediğini ve yalnızca klavye etkinleştirmesi ile erişilebilirlik hizmeti gerektirdiğini bildirir.</p>
+    <p>İlk kurulum ekranında uygulama kullanıcıya açıkça uygulamanın çevrimdışı çalıştığını, yazı içeriğinin temel akışta cihaz dışına gönderilmediğini, klavye etkinleştirmesi ile erişilebilirlik hizmetini açmanızı ve telefon iznini vermenizi istediğini ve telefon izninin neden istendiğini bildirir.</p>
 
     <h2>4. İnternet kullanıyor mu?</h2>
     <p>Uygulamanın temel yazma akışı çevrimdışı çalışacak şekilde tasarlanmıştır. Bugünkü sürümde internet izni istenmez, yazdığınız metin temel çalışma akışında uzak sunucuya gönderilmez ve Braille çeviri, geri bildirim ve alan davranışları cihaz üzerinde işlenir.</p>
+    <p>Geri bildirim ekranından kendiniz e-posta gönderdiğinizde, yazdıklarınız ve seçtiğiniz ek bize ulaşır; ayrıntılar 7. bölümdedir.</p>
 
     <h2>5. Hangi veriler cihazda işlenir?</h2>
     <p>Uygulama, temel işlevi gereği bazı verileri cihaz üzerinde işler. Bunlar yazdığınız metin, aktif alan bağlamı, Braille hücreleri ve bunların metne dönüşümü ile sesli geri bildirim için gerekli olayları içerebilir.</p>
@@ -74,10 +78,12 @@
     <p>Uygulama seçili Braille profil ve yazma tercihleri, dokunma, kaydırma ve çoklu dokunma ayarları, kalibrasyon bilgileri, ekran karartma ve gizlilik tercihleri, şifre alanı geri bildirim modu ve kullanıcının tanımladığı kestirmeler gibi yerel verileri saklayabilir.</p>
     <p>Bu veriler uygulamanın doğru çalışması için tutulur.</p>
 
-    <h2>7. Tanılama ve sorun bildirimi</h2>
-    <p>Uygulama, hata ayıklama ve ürün kararlılığı için sınırlı teknik tanılama kayıtları tutabilir. Bu kayıtlar ayarların hangi kaynaktan yüklendiği, IME ve erişilebilirlik yaşam döngüsü olayları, commit, delete veya köprü başarısızlıkları ve debug modunda oturum izi gibi teknik bilgileri içerebilir.</p>
-    <p>Bu kayıtlar otomatik olarak dışarı gönderilmez. Tanılama raporu kullanıcı tarafından panoya kopyalanabilir, paylaşılabilir veya kısa not ile birlikte sorun bildirme akışında dışa aktarılabilir. Bu paylaşım yalnızca kullanıcı açıkça başlattığında gerçekleşir.</p>
-    <p>Tanılama ve sorun bildirimi akışı, hassas yazı içeriğini otomatik olarak dışarı göndermek için tasarlanmamıştır.</p>
+    <h2>7. Tanı kaydı ve geri bildirim</h2>
+    <p>Güven Braille Klavye, sorunları bulabilmek için telefonda kısa bir tanı kaydı tutar. Kayıt telefonda kalır; 7 günden eski kısımlar kendiliğinden silinir. Kayıtta klavyenin hangi uygulamada (uygulamanın paket adıyla) ve hangi alan türünde açıldığı, yazının alana ulaşıp ulaşmadığı, kesintiler ve hatalar gibi içeriksiz bilgiler bulunur. Yazdığınız metin, karakterler, nokta desenleri ve yazının uzunluğu bulunmaz; şifre alanlarında yalnız giriş yapılıp yapılmadığı, sayı içermeden yazılır. Ayrıntılı tanı kaydını yalnız siz açabilirsiniz. Açıkken dokunma, hareket ve teslim adımlarını da yazar; yine yazdığınız metni, karakterleri ve nokta desenlerini yazmaz, şifre alanlarında bu adımları tek tek yazmaz. Ayrıntılı kaydın boyutu sınırlıdır; eski satırlar kendiliğinden silinir.</p>
+    <p>Ayarlar'daki Geri bildirim ekranından hata, öneri ya da soru gönderebilirsiniz. E-postayla gönder'e bastığınızda telefonunuzdaki e-posta uygulaması açılır; e-postayı siz görür ve siz gönderirsiniz. Uygulama hiçbir şeyi kendiliğinden göndermez. E-postada yazdığınız notla birlikte uygulama sürümü, Android sürümü, telefon modeli, uygulama dili ve kullandığınız ekran okuyucunun adı bulunur.</p>
+    <p>Tanı raporunu ekle seçiliyse e-postaya tanı raporu eklenir. Hata bildiriminde bu seçenek baştan seçilidir; isterseniz kaldırabilirsiniz. Rapor, tanı kaydının yanında uygulama ve telefon bilgilerini içerir: sürümler, telefon modeli, ekran boyutu, seçili Braille profili ve klavyenin bazı ayarları, kullanılan konuşma motorunun ve açık erişilebilirlik hizmetlerinin paket adları. Rapor yazdığınız metni, karakterleri, nokta desenlerini, kişi adlarını veya mesaj içeriğini içermez.</p>
+    <p>Klavye beklenmedik biçimde kapanırsa, Güven ayarlarını bir sonraki açışınızda bunu bildirmek isteyip istemediğiniz sorulur. Bu kontrol telefonda yapılır; Bildir'e basıp e-postayı göndermediğiniz sürece hiçbir bilgi gönderilmez.</p>
+    <p>Gönderdiğiniz e-postalar guvenapps80@gmail.com adresine, Google'ın Gmail hizmeti üzerinden ulaşır. Yalnız sorunu incelemek, uygulamayı geliştirmek ve size yanıt vermek için kullanılır; satılmaz ve reklam için kullanılmaz. E-postaları okurken, özetlerken ve yanıtlarken yapay zekâ destekli yardımcı araçlardan ve yalnız bize ait bir bildirim kanalından yararlanabiliriz. E-postalar en geç 12 ay saklanır, sonra silinir. E-postanızın ve ekinin daha önce silinmesini isterseniz aynı adrese yazabilirsiniz.</p>
 
     <h2>8. Veriler üçüncü taraflarla paylaşılır mı?</h2>
     <p>Uygulamanın bugünkü temel davranışına göre yazdığınız içerik reklam veya pazarlama amacıyla paylaşılmaz, temel yazma akışı uzak sunucuya bağlı değildir ve otomatik bir bulut eşitleme akışı yoktur.</p>

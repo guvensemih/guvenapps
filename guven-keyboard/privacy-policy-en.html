@@ -41,7 +41,7 @@
   <header>
     <p><a href="./">Back to Güven Braille Keyboard page</a></p>
     <h1>Güven Braille Keyboard - Privacy Policy</h1>
-    <p>Last updated: 2026</p>
+    <p>Last updated: October 23, 2026</p>
   </header>
 
   <main>
@@ -49,8 +49,11 @@
     <p>Güven Braille Keyboard is a keyboard app that enables Braille typing on Android devices. The app converts Braille input into text, provides audio feedback, and aims to offer an accessible Braille typing experience when TalkBack is enabled.</p>
 
     <h2>2. What permissions does the app request?</h2>
-    <p>In its core version, the app does not request common dangerous Android permissions such as location, contacts, camera, microphone, SMS, or file management permissions.</p>
+    <p>The app requests only the phone permission. It does not request other dangerous Android permissions such as location, contacts, camera, microphone, SMS or file management permissions.</p>
     <p>The core version of the app also does not request internet permission.</p>
+
+    <h3>Phone permission</h3>
+    <p>This is requested so that what you have typed is not lost when the phone rings. When the phone rings, Güven puts what you typed into the field right away and closes the keyboard. Güven does not make calls with this permission, and it does not see the caller's number or the call log.</p>
 
     <h3>Keyboard activation</h3>
     <p>This is required for an Android input method app to enter text. The Braille keyboard can write text into edit fields only after it is enabled as a keyboard.</p>
@@ -61,10 +64,11 @@
     <p>This service is not designed to control the device generally, run hidden automation, or perform actions without the user's knowledge.</p>
 
     <h2>3. What does the app ask for during first setup?</h2>
-    <p>During the first setup screen, the app clearly informs the user that it works offline, that typed content is not sent outside the device in the core flow, that dangerous Android permissions are not requested, and that only keyboard activation and the accessibility service are required.</p>
+    <p>During the first setup screen, the app clearly informs the user that it works offline, that typed content is not sent outside the device in the core flow, that it asks you to turn on keyboard activation and the accessibility service and to grant the phone permission, and why the phone permission is requested.</p>
 
     <h2>4. Does the app use the internet?</h2>
     <p>The core typing flow of the app is designed to work offline. In the current version, internet permission is not requested, typed text is not sent to a remote server in the core workflow, and Braille translation, feedback, and field behavior are processed on the device.</p>
+    <p>When you send feedback yourself from the Feedback screen, what you wrote and any attachment you chose reach us by email; section 7 explains the details.</p>
 
     <h2>5. What data is processed on the device?</h2>
     <p>The app processes some data on the device as part of its core functionality. This may include typed text, active field context, Braille cells and their conversion into text, and events required for audio feedback.</p>
@@ -74,10 +78,12 @@
     <p>The app may store local data such as selected Braille profile and typing preferences, touch, swipe and multi-touch settings, calibration information, screen dimming and privacy preferences, password field feedback mode, and user-defined shortcuts.</p>
     <p>This data is stored so the app can function properly.</p>
 
-    <h2>7. Diagnostics and issue reporting</h2>
-    <p>The app may keep limited technical diagnostic logs for debugging and product stability. These logs may include technical information such as where settings were loaded from, IME and accessibility lifecycle events, commit, delete or link failures, and session traces in debug mode.</p>
-    <p>These logs are not automatically sent outside the device. A diagnostic report may be copied to the clipboard, shared by the user, or exported through the issue reporting flow with a short note. This sharing happens only when the user explicitly starts it.</p>
-    <p>The diagnostics and issue reporting flow is not designed to automatically export sensitive typed content.</p>
+    <h2>7. Diagnostic Log and Feedback</h2>
+    <p>To help find problems, Güven Braille Keyboard keeps a short diagnostic log on the phone. The log stays on the phone, and parts older than 7 days are deleted automatically. It contains content-free information such as which app the keyboard opened in (by the app's package name) and what kind of field it was, whether the text reached the field, interruptions and errors. It contains no typed text, characters, dot patterns or text lengths; in password fields it records only whether input happened, without any counts. Only you can turn on the detailed diagnostic log. While it is on, it also records touch, gesture and delivery steps, still without your typed text, characters or dot patterns, and it does not record these steps one by one in password fields. The detailed log has a size limit; old lines are deleted automatically.</p>
+    <p>You can send a bug report, a suggestion or a question from the Feedback screen in Settings. When you tap Send by email, the email app on your phone opens; you see the email and send it yourself. The app never sends anything on its own. Along with your note, the email includes the app version, Android version, phone model, app language and the name of the screen reader you use.</p>
+    <p>If Attach the diagnostic report is selected, the diagnostic report is attached to the email. For a bug report this option is selected from the start; you can clear it if you prefer. Besides the diagnostic log, the report contains information about the app and the phone: versions, phone model, screen size, the selected Braille profile and some keyboard settings, and the package names of the speech engine in use and of enabled accessibility services. The report contains no typed text, characters, dot patterns, contact names or message contents.</p>
+    <p>If the keyboard closes unexpectedly, the next time you open Güven's settings you are asked whether you would like to let us know. This check happens on the phone; no information is sent unless you tap Report and send the email.</p>
+    <p>Emails you send reach guvenapps80@gmail.com through Google's Gmail service. They are used only to look into the problem, improve the app and reply to you; they are not sold or used for advertising. When reading, summarizing and replying to emails, we may use AI-assisted tools and a notification channel that only we use. Emails are kept for at most 12 months and then deleted. If you would like your email and its attachment deleted sooner, you can write to the same address.</p>
 
     <h2>8. Is data shared with third parties?</h2>
     <p>Based on the current core behavior of the app, typed content is not shared for advertising or marketing purposes, the core typing flow does not depend on a remote server, and there is no automatic cloud synchronization flow.</p>
