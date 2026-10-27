@@ -28,6 +28,16 @@ Türkçe ve İngilizce sayfalar aynı yapıda tutulur.
 - Uygulamada bir ad ya da akış değiştiyse sitedeki anlatım da değişir. Örnek: 2.0.23'te Sorun bildir bölümünün adı Geri bildirim oluyor ve E-postayla gönder düğmesi alıcıyı ve konuyu kendisi dolduruyor. 2.0.23 üretime çıkınca ana sayfadaki "Uygulamanın içinden" anlatımı ve Güven Phone sayfasındaki kısa cümle yeniden yazılır.
 - Gizlilik politikası yalnız uygulamanın veri davranışı değiştiyse güncellenir.
 
+### Yardım sayfaları
+
+`guven-phone/yardim/` ve `en/guven-phone/help/` elle düzenlenmez; uygulamadaki Yardım Rehberi'nden üretilir. Yeni sürüm üretime çıkınca betiği paketin derlendiği commit'le çalıştır:
+
+```
+python3 -I tools/build_help_pages.py <guven-phone-commit>
+```
+
+Betik konu sırasını `HelpScreen.kt` içindeki `HelpTopic` listesinden, metinleri `values-tr` ve `values-en` altındaki `strings_help.xml` dosyalarından alır ve kaldırılan bir konunun sayfasını siler. Yenilikler kartlarındaki "Nasıl kullanılır" bağlantıları, kartın `releaseNoteEntries()` içindeki `helpTopic` değerine göre elle eklenir.
+
 ### Yayından önce
 
 Yerelde `python3 -m http.server` ile aç; bağlantıları, başlık sırasını, "Ana içeriğe geç" bağlantısını ve dil seçimini iki dilde dene. Semih değişen metinleri baştan sona dinler ve onaylar. `main`'e push canlı yayındır (GitHub Pages); onaysız push yapılmaz. Push sonrası yeni sayfaları canlı sitede aç.
