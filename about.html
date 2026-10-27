@@ -74,23 +74,36 @@
       font-size: 0.95rem;
     }
   </style>
+  <link rel="icon" href="/assets/guven-apps-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
   <a class="skip-link" href="#ana-icerik">Ana içeriğe geç</a>
 
-  <nav class="language-switcher" aria-label="Dil seçimi">
-    <span aria-current="page">Türkçe</span>
-    <a href="/en/about.html" lang="en">English</a>
-  </nav>
-
-  <header>
-    <p><a href="./">Güven Apps ana sayfasına dön</a></p>
-    <h1>Hakkımızda</h1>
-    <p>Güven Apps, erişilebilir ve kullanımı kolay Android uygulamaları geliştiren bağımsız bir uygulama markasıdır.</p>
-
+  <header class="site-header">
+    <p class="site-brand">
+      <img src="/assets/guven-apps-icon.svg" alt="" width="40" height="40">
+      Güven Apps
+    </p>
+    <nav class="site-nav" aria-label="Site menüsü">
+      <a href="/">Ana sayfa</a>
+      <a href="/about.html" aria-current="page">Hakkımızda</a>
+      <a href="/guven-phone/">Güven Phone</a>
+      <a href="/guven-keyboard/">Güven Braille Klavye</a>
+      <a href="/#destek">İletişim</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Dil seçimi">
+      <span aria-current="page">Türkçe</span>
+      <a href="/en/about.html" lang="en">English</a>
+    </nav>
   </header>
 
   <main id="ana-icerik">
+    <div class="page-intro">
+      <h1>Hakkımızda</h1>
+      <p>Güven Apps, erişilebilir ve kullanımı kolay Android uygulamaları geliştiren bağımsız bir uygulama markasıdır.</p>
+    </div>
+
     <section>
       <h2>Biz kimiz?</h2>
       <div class="card">

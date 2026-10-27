@@ -74,23 +74,36 @@
       font-size: 0.95rem;
     }
   </style>
+  <link rel="icon" href="/assets/guven-apps-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <nav class="language-switcher" aria-label="Language selection">
-    <a href="/about.html" lang="tr">Türkçe</a>
-    <span aria-current="page">English</span>
-  </nav>
-
-  <header>
-    <p><a href="./">Return to the Güven Apps home page</a></p>
-    <h1>About</h1>
-    <p>Güven Apps is an independent app brand developing accessible and easy-to-use Android applications.</p>
-
+  <header class="site-header">
+    <p class="site-brand">
+      <img src="/assets/guven-apps-icon.svg" alt="" width="40" height="40">
+      Güven Apps
+    </p>
+    <nav class="site-nav" aria-label="Site menu">
+      <a href="/en/">Home</a>
+      <a href="/en/about.html" aria-current="page">About</a>
+      <a href="/en/guven-phone/">Güven Phone</a>
+      <a href="/en/guven-keyboard/">Güven Braille Keyboard</a>
+      <a href="/en/#support">Contact</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Language selection">
+      <a href="/about.html" lang="tr">Türkçe</a>
+      <span aria-current="page">English</span>
+    </nav>
   </header>
 
   <main id="main-content">
+    <div class="page-intro">
+      <h1>About</h1>
+      <p>Güven Apps is an independent app brand developing accessible and easy-to-use Android applications.</p>
+    </div>
+
     <section>
       <h2>Who are we?</h2>
       <div class="card">

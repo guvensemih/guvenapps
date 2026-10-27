@@ -1,0 +1,62 @@
+/* Shared site header and heading styles; loaded after each page's own styles. */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #075b59;
+}
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0D1B3D;
+}
+.site-brand img {
+  width: 40px;
+  height: 40px;
+}
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 0;
+}
+.site-header nav a,
+.site-header .language-switcher span {
+  margin-right: 0;
+}
+.site-nav a {
+  font-weight: 700;
+  color: #0D1B3D;
+}
+.site-nav a[aria-current="page"] {
+  color: #075b59;
+  text-decoration-thickness: 3px;
+}
+.site-header .language-switcher {
+  margin: 0 0 0 auto;
+}
+.page-intro {
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+h1 {
+  color: #0D1B3D;
+}
+main h2 {
+  padding-left: 12px;
+  border-left: 6px solid #075b59;
+  color: #0D1B3D;
+}
+.card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #075b59;
+}

@@ -140,42 +140,51 @@
       font-size: 0.95rem;
     }
   </style>
+  <link rel="icon" href="/assets/guven-apps-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <a class="skip-link" href="#ana-icerik">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <nav class="language-switcher" aria-label="Language selection">
-    <a href="/" lang="tr">Türkçe</a>
-    <span aria-current="page">English</span>
-  </nav>
-
-  <header>
-    <div class="brand-intro">
-      <img
-        class="brand-icon"
-        src="../assets/guven-apps-icon.svg"
-        alt="Güven Apps icon">
-
-      <div class="brand-copy">
-        <h1>Güven Apps</h1>
-        <p class="tagline">Accessible Android apps</p>
-        <p>Güven Apps is an independent app brand developing accessible and easy-to-use Android applications.</p>
-
-        <details class="logo-description">
-          <summary>Logo description</summary>
-          <p>The Güven Apps logo features a stylized letter G in dark navy and teal, shaped like a rounded shield and speech bubble. Six dots inside the symbol represent a Braille cell and accessibility.</p>
-        </details>
-      </div>
-    </div>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="guven-phone/">Güven Phone</a>
-      <a href="guven-keyboard/">Güven Braille Keyboard</a>
-      <a href="#support">Contact</a>
+  <header class="site-header">
+    <p class="site-brand">
+      <img src="/assets/guven-apps-icon.svg" alt="" width="40" height="40">
+      Güven Apps
+    </p>
+    <nav class="site-nav" aria-label="Site menu">
+      <a href="/en/" aria-current="page">Home</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/guven-phone/">Güven Phone</a>
+      <a href="/en/guven-keyboard/">Güven Braille Keyboard</a>
+      <a href="/en/#support">Contact</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Language selection">
+      <a href="/" lang="tr">Türkçe</a>
+      <span aria-current="page">English</span>
     </nav>
   </header>
 
-  <main id="ana-icerik">
+  <main id="main-content">
+    <div class="page-intro">
+      <div class="brand-intro">
+        <img
+          class="brand-icon"
+          src="../assets/guven-apps-icon.svg"
+          alt="Güven Apps icon">
+
+        <div class="brand-copy">
+          <h1>Güven Apps</h1>
+          <p class="tagline">Accessible Android apps</p>
+          <p>Güven Apps is an independent app brand developing accessible and easy-to-use Android applications.</p>
+
+          <details class="logo-description">
+            <summary>Logo description</summary>
+            <p>The Güven Apps logo features a stylized letter G in dark navy and teal, shaped like a rounded shield and speech bubble. Six dots inside the symbol represent a Braille cell and accessibility.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
     <section>
       <h2>Apps</h2>
 
@@ -220,23 +229,38 @@
       <h2>Latest developments</h2>
 
       <div class="card">
-        <p class="status">Update in development</p>
         <h3>Güven Phone</h3>
-        <p>A major update with new features, accessibility improvements and bug fixes is currently in development.</p>
+        <p class="status">On Google Play: version 2.0.22</p>
+        <p>Everything new since 2.0.12 reached all users on 23 October 2026: the contact form and contact actions, Bluetooth during calls, speed dial, ringtones, caller announcement settings and more.</p>
+        <p><a href="guven-phone/whats-new/">Read what's new in Güven Phone 2.0.22</a></p>
       </div>
 
       <div class="card">
-        <p class="status">In development and testing</p>
         <h3>Güven Braille Keyboard</h3>
+        <p class="status">In closed testing on Google Play</p>
         <p>Development and testing continue with a focus on Braille typing, screen reader compatibility and reliable text entry.</p>
       </div>
     </section>
     <section>
-      <h2 id="support">Feedback and support</h2>
-      <p>You can contact us by email to report problems, suggest accessibility improvements or request new features.</p>
+      <h2 id="support">Community and feedback</h2>
+      <p>You can tell us about problems, suggest accessibility improvements or request new features.</p>
+
+      <h3>Email</h3>
       <p>
         <a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a>
       </p>
+
+      <h3>Telegram groups</h3>
+      <p>There are two Telegram groups where you can ask us and other users questions and share suggestions and experiences.</p>
+      <ul>
+        <li><a href="https://t.me/+AOLXKgzG_kRiMjk8">Join the Guven Apps Global Telegram group</a> (English)</li>
+        <li><a href="https://t.me/+fHAJT2K5sS43N2I0" hreflang="tr">Join the Guven Apps Telegram group</a> (Turkish)</li>
+      </ul>
+
+      <h3>From inside the app</h3>
+      <p>In Güven Phone, open Report a problem at the top of Settings. Describe the problem briefly if you like.</p>
+      <p>Send lets you send the report with an app you choose, such as email. If you choose email, address it to <a href="mailto:guvenapps80@gmail.com">guvenapps80@gmail.com</a>. Save to file saves the report on the phone.</p>
+      <p>The report contains app and device information and a short log of recent events. It contains no names, phone numbers or messages.</p>
     </section>
   </main>
 
