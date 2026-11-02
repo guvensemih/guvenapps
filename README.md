@@ -36,6 +36,8 @@ Türkçe ve İngilizce sayfalar aynı yapıda tutulur.
 python3 -I tools/build_help_pages.py <guven-phone-commit>
 ```
 
+Windows'ta komut `py -3 -I tools\build_help_pages.py <guven-phone-commit> --phone-repo <guven-phone klasörü>` olur (`py` yoksa `python`). Betik uygulama metnini her sistemde UTF-8 okur ve sayfaları Mac tipi (LF) satır sonuyla yazar; Windows'ta yeniden üretilen sayfa yalnız satır sonu yüzünden değişmiş görünmez.
+
 Betik konu sırasını `HelpScreen.kt` içindeki `HelpTopic` listesinden, metinleri `values-tr` ve `values-en` altındaki `strings_help.xml` dosyalarından alır ve kaldırılan bir konunun sayfasını siler. Yenilikler kartlarındaki "Nasıl kullanılır" bağlantıları, kartın `releaseNoteEntries()` içindeki `helpTopic` değerine göre elle eklenir.
 
 ### Yayından önce

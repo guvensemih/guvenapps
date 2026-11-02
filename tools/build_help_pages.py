@@ -91,9 +91,10 @@ class Phone:
         self.repo, self.commit = repo, commit
 
     def show(self, path):
+        # Git prints the files as UTF-8; the system's own encoding (cp1254 on Turkish Windows) would garble them.
         return subprocess.run(
             ["git", "-C", str(self.repo), "show", f"{self.commit}:{path}"],
-            capture_output=True, text=True, check=True,
+            capture_output=True, encoding="utf-8", check=True,
         ).stdout
 
     def version(self):
@@ -243,7 +244,8 @@ def build(phone, lang, topics, version):
 
 def write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8")
+    # LF on every system, so pages rebuilt on Windows do not show up as changed only for their line endings.
+    path.write_text(text, encoding="utf-8", newline="\n")
 
 
 def main():
